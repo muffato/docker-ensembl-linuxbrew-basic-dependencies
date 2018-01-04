@@ -13,8 +13,7 @@ RUN mkdir -p $ENSEMBL_MOONSHINE_ARCHIVE
 
 # Turn off analytics and tap brew & Ensembl repositories
 RUN brew analytics off \
- && brew tap homebrew/science \
- && brew tap homebrew/nginx \
+ && brew tap denji/nginx \
  && brew tap ensembl/ensembl \
  && brew tap ensembl/moonshine \
  && brew tap ensembl/web \
