@@ -8,8 +8,8 @@ RUN sudo apt-get update \
  && sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Setup moonshine
-ENV ENSEMBL_MOONSHINE_ARCHIVE /home/linuxbrew/ENSEMBL_MOONSHINE_ARCHIVE
-RUN mkdir -p $ENSEMBL_MOONSHINE_ARCHIVE
+ENV HOMEBREW_ENSEMBL_MOONSHINE_ARCHIVE /home/linuxbrew/ENSEMBL_MOONSHINE_ARCHIVE
+RUN mkdir -p $HOMEBREW_ENSEMBL_MOONSHINE_ARCHIVE
 
 # Turn off analytics and tap brew & Ensembl repositories
 RUN brew analytics off \
