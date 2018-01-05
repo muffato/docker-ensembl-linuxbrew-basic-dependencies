@@ -15,6 +15,7 @@ RUN mkdir -p $HOMEBREW_ENSEMBL_MOONSHINE_ARCHIVE
 RUN brew analytics off \
  && brew tap denji/nginx \
  && brew tap ensembl/ensembl \
+ && brew tap ensembl/external \
  && brew tap ensembl/moonshine \
  && brew tap ensembl/web \
  && brew tap ensembl/cask
