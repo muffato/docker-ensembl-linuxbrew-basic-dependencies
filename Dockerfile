@@ -1,5 +1,5 @@
 # Docker image with all necessary Homebrew and Ensembl taps
-FROM linuxbrew/linuxbrew
+FROM linuxbrew/linuxbrew:1.9.3
 
 # Install some required packages
 RUN sudo apt-get update \
@@ -9,6 +9,7 @@ RUN sudo apt-get update \
 
 # Setup moonshine
 ENV HOMEBREW_ENSEMBL_MOONSHINE_ARCHIVE /home/linuxbrew/ENSEMBL_MOONSHINE_ARCHIVE
+ENV HOMEBREW_NO_AUTO_UPDATE 1
 RUN mkdir -p $HOMEBREW_ENSEMBL_MOONSHINE_ARCHIVE
 
 # Turn off analytics and tap brew & Ensembl repositories
