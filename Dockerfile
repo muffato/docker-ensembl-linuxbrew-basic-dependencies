@@ -1,5 +1,5 @@
 # Docker image with all necessary Homebrew and Ensembl taps
-FROM linuxbrew/linuxbrew:1.9.3
+FROM linuxbrew/brew:1.9.3
 
 # Install some required packages
 RUN sudo apt-get update \
