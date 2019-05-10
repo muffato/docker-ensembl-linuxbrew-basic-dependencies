@@ -21,3 +21,7 @@ RUN brew analytics off \
  && brew tap ensembl/web \
  && brew tap ensembl/cask
 
+RUN brew install ensembl/cask/pre-flight \
+ && brew install ensembl/cask/basic-dependencies \
+ && brew install ensembl/cask/perl-clibs
+
