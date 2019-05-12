@@ -24,5 +24,6 @@ RUN brew analytics off \
 RUN brew install ensembl/cask/pre-flight \
  && brew install ensembl/cask/basic-dependencies \
  && brew install ensembl/cask/perl-clibs \
- && rm -rf /home/linuxbrew/.cpan /home/linuxbrew/.cache/Homebrew/downloads/ /home/linuxbrew/.cache/Homebrew/*.bottle.*
+ && brew cleanup \
+ && rm -rf /home/linuxbrew/.cpan /home/linuxbrew/.cache/Homebrew
 
